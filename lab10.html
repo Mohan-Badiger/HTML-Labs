@@ -1,0 +1,48 @@
+<!-- Write JavaScript Program to show light ON/OFF Demo -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+    background-color: darkgrey;
+    }
+    #red{
+        width:200px;
+        height:200px;
+        border-radius:50%;
+        position: absolute;
+        top:20%;
+        left:20%;
+    }
+    #black
+    {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        position: absolute;
+        top:20%;
+        left:20%;
+    }
+</style>
+<button onclick="ON()">lighton</button>
+<button onclick="OFF()">lightoff</button>
+<body>
+    <div id="red"></div>
+    <div id="black"></div>
+    <script>
+        function ON()
+            {
+            document.getElementById("red").style.backgroundColor="red";
+            }
+        function OFF()
+            {
+            document.getElementById("black").style.backgroundColor="black";
+            }
+    </script>
+</body>
+</html>
+

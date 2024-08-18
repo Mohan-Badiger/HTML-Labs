@@ -1,0 +1,22 @@
+<!-- Program to demonstrate BezierCurveTo() method using HTML canvas.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="bezierCurve" width="600" height="300"></canvas>
+    <script>
+        const canvas=document.getElementById("bezierCurve");
+        const ctx=canvas.getContext("2d");
+        ctx.moveTo(188,130);
+        ctx.bezierCurveTo(140,10,388,10,388,170);
+        ctx.lineWidth=10;
+        ctx.strokeStyle="green";
+        ctx.stroke();
+    </script>
+</body>
+</html>
+

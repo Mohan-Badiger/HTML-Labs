@@ -1,0 +1,26 @@
+<!--program to demonstrate gradient using canvas and html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="lineargrad" width="300" height="300"></canvas>
+    <script>
+        var canvas=document.getElementById("lineargrad")
+        var ctx=canvas.getContext("2d")
+        ctx.font="50px arial";
+        var grad=ctx.createLinearGradient(0,0,canvas.width,10)
+        grad.addColorStop("0","green")
+        grad.addColorStop("0.5","red")
+        grad.addColorStop("0.6","blue")
+        ctx.strokeStyle=grad;
+        ctx.strokeText("BLDEA JKD",20,100)
+        ctx.font="20px arial"
+        ctx.fillStyle=grad;
+        ctx.fillText("BCA COLLEGE",20,50,100,100)
+    </script> 
+</body>
+</html>

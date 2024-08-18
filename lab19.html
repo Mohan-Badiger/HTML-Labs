@@ -1,0 +1,21 @@
+<!--program to demonstrate source-over,source-in and source out properties for composition using html canvas-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="composition" width="500" height="500"></canvas>
+    <script>
+        var canvas=document.getElementById("composition");
+        var ctx=canvas.getContext("2d");
+        ctx.fillStyle="green";
+        ctx.fillRect(20,20,100,200);
+        ctx.fillStyle="red";
+        ctx.globalCompositOperation="source-over";
+        ctx.fillRect(30,30,100,250);
+    </script>
+</body>
+</html>

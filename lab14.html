@@ -1,0 +1,26 @@
+<!-- Program to demonstrate "StrokeText()" method using HTML Canvas.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="stroketext" width="300" height="200" style="border: solid red;"></canvas>
+    <script>
+        const
+        canvas=document.getElementById("stroketext")
+        const ctx=canvas.getContext("2d");
+        ctx.font="30px Arial";
+        var
+        grad=ctx.createLinearGradient(0,0,canvas.width,0);
+        grad.addColorStop("0","green");
+        grad.addColorStop("0.4","red");
+        grad.addColorStop("0.7","blue");
+        ctx.StrokeStyle=grad;
+        ctx.StrokeText("BCA JKD",10,90);
+    </script>
+</body>
+</html>
+

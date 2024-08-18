@@ -1,0 +1,23 @@
+<!--program to demonstrate text shadow using canvas and html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="shadow" width="500" height="500"></canvas>
+    <script>
+        var canvas=document.getElementById("shadow")
+        var ctx=canvas.getContext("2d")
+        ctx.shadowColor="red";
+        ctx.fillStyle="green"
+        ctx.shadowBlur=5;
+        ctx.shadowOffSetX=20;
+        ctx.shadowOffSetY=30;
+        ctx.font="40px arial";
+        ctx.fillText("BLDEA JAMAKHANDI",50,50);
+    </script>
+</body>
+</html>

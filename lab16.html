@@ -1,0 +1,29 @@
+<!-- Program to demonstrate different line patterns with different colors using Canvas.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<canvas id="line" width="200" height="400"></canvas>
+</body>
+</html>
+<script>
+    var canvas=document.getElementById("line");
+    var ctx=canvas.getContext("2d");
+    var color1="red",color2="green",color3="blue";
+    var rows=10;
+    for(var i=0;i<rows;i++)
+    {
+    var thickness = 200/rows;
+    ctx.beginPath();
+    ctx.strokeStyle=i%2?color1:color2;
+    ctx.lineWidth=thickness;
+    ctx.moveTo(0,i*thickness + thickness/2);
+    ctx.lineTo(300,i*thickness + thickness/2);
+    ctx.stroke();
+    }
+</script>
+

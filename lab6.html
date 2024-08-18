@@ -1,0 +1,94 @@
+<!-- Program to use table tag to format web page. Also create the Time Table of your class using table tag -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+    content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #table{
+    width: 90%;
+    height: 50%;
+    border-collapse: collapse;
+    border: 4px solid black;
+    text-align: center; 
+    }
+    th{
+    color:blue;
+    background-color: aqua;
+    }
+    td{
+    padding: 20px;
+    }
+    tr:hover{
+    background-color: gray;
+    }
+    tr:nth-child(odd)
+    {
+    background-color: gray;
+    }
+    #circle
+    {
+    width:100px;
+    height:100px;
+    background-color: red;
+    border-radius: 50%;
+    }
+</style>
+</head>
+<body>
+    <table id="table" border="2px solid black">
+        <tr>
+            <th>Days</th>
+            <th>7:30-10:30</th>
+            <th>11:30-12:30</th>
+            <th>12:30-1:30</th>
+            <th>1:30-2:30</th>
+            <th>2:30-3:30</th>
+        </tr>
+        <tr>
+            <td>Mon</td>
+            <td>python(b2)/animation(b1)</td>
+            <td>OS </td>
+            <td>English</td>
+            <td>kannada</td>
+            <td>python</td>
+        </tr>
+        <tr>
+            <td>Tue</td>
+            <td>python(b1)/animation(b2)</td>
+            <td>English</td>
+            <td>animation</td>
+            <td>os</td>
+            <td>python</td>
+        </tr>
+        <tr>
+            <td>Wed</td>
+            <td colspan="1"> ----------------</td>
+            <td>English</td>
+            <td>animation</td>
+            <td>os</td>
+            <td>python</td>
+        </tr>
+        <tr>
+            <td>Thu</td>
+            <td colspan="1"> ----------------</td>
+            <td>kannada</td>
+            <td>python</td>
+            <td>os</td>
+            <td>animation</td>
+        </tr>
+        <tr>
+            <td>Thu</td>
+            <td colspan="1"> ----------------</td>
+            <td>animation</td>
+            <td>English</td>
+            <td>os</td>
+            <td>-----</td>
+        </tr>
+    </table>
+</body>
+</html>
+

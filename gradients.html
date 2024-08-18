@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="gradients" width="300" height="300"></canvas>
+    <script>
+        var canvas=document.getElementById("gradients");
+        var ctx=canvas.getContext("2d");
+        var grad=ctx.createLinearGradient(0,0,canvas.width,10);
+        grad.addColorStop(0,"green");
+        grad.addColorStop(0.5,"red");
+        grad.addColorStop(0.2,"yellow");
+        grad.addColorStop(0.6,"blue");
+        ctx.fillStyle=grad;
+        ctx.fillRect(10,10,100,100);
+    </script>
+</body>
+</html>

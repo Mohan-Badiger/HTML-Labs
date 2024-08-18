@@ -1,0 +1,66 @@
+<!-- program to demonstrate animation of "Bouncing Cloud" using HTML and CSS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: skyblue;
+        }
+        #container{
+            width: 600px;
+            height: 600px;
+            top: 20%;
+            left: 30%;
+            position: absolute;
+            animation-name: example;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+        #section1{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(245, 245, 246);
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            border-radius: 50%;
+        }
+        #section2{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(245, 245, 248);
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            border-radius: 50%;
+        }
+        #section3{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(241, 241, 245);
+            position: absolute;
+            top: 20%;
+            left: 35%;
+            border-radius: 50%;
+        }
+        @keyframes example{
+            from{left: 0px}
+            to{left: 100px;}
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="section1"></div>
+        <div id="section2"></div>
+        <div id="section3"></div>
+        <div id="section4"></div>
+    </div>
+</body>
+</html>
