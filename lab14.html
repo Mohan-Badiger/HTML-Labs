@@ -7,20 +7,20 @@
     <title>Document</title>
 </head>
 <body>
-    <canvas id="stroketext" width="300" height="200" style="border: solid red;"></canvas>
+    <canvas id="stroketext" width="300" height="200"></canvas>
     <script>
-        const
-        canvas=document.getElementById("stroketext")
-        const ctx=canvas.getContext("2d");
-        ctx.font="30px Arial";
-        var
-        grad=ctx.createLinearGradient(0,0,canvas.width,0);
-        grad.addColorStop("0","green");
-        grad.addColorStop("0.4","red");
-        grad.addColorStop("0.7","blue");
-        ctx.StrokeStyle=grad;
-        ctx.StrokeText("BCA JKD",10,90);
+        var canvas=document.getElementById("stroketext");
+        var ctx=canvas.getContext("2d");
+        var grad=ctx.createLinearGradient(0,0,canvas.width,10);
+        grad.addColorStop(0,"green");
+        grad.addColorStop(0.5,"red");
+        grad.addColorStop(0.3,"blue");
+        ctx.font="50px Arial";
+        ctx.strokeStyle=grad
+        ctx.strokeText("BCA JKD",10,100);
     </script>
 </body>
 </html>
+
+
 
